@@ -1,8 +1,15 @@
 def summary(*args):
-    z = 0
+    """ Функция суммы.
+    
+    Функция для расчёта суммы чисел.
+    Принимает неограниченное количество целочисленных значений - args.
+    Возвращает целочисленное значение (сумму) - summ.
+    
+    """
+    summ = 0
     for num in args:
-        z += num
-    return z
+        summ += num
+    return summ
 sum_list=[]
 sum_list = input("Введите числа, через пробел, которые хотите сложить. Для выхода нахмите Enter. ").split()
 for i in range (len(sum_list)):
